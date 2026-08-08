@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Generic JS-templated trek viewer: keep crawlable for treks that don't yet
+# have a dedicated static page, but avoid it competing with static pages
+# like /roopkund-trek.html for the same query.
+Allow: /view-trek.html
+
+Sitemap: https://www.the-mountain-vibes.com/sitemap.xml
