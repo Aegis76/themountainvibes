@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Trips | The Mountain Vibes</title>
+    <meta
+      name="description"
+      content="Book a private Himalayan trek or custom adventure with The Mountain Vibes. Experience flexible dates, dedicated support, and elite logistics tailored for your group."
+    />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="private.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="https://github.com/Aegis76/Mountain-Vibes/blob/main/The-Mountain-Vibes-main/images/logo.jpg?raw=true" alt="Logo" class="logo-icon" />
+        <div class="logo-txt">
+          <strong
+            >The Mountain<span style="color: rgb(255, 255, 0); font-size: 1em"
+              >Vibes</span
+            ></strong
+          >
+          <span>Safest &amp; Trusted Adventure Provider</span>
+        </div>
+      </a>
+      <ul class="nav-right">
+        <div class="nav-search">
+          <input type="text" placeholder="Search treks..." />
+        </div>
+        <li><a href="trek.html" class="nb">All Treks</a></li>
+        <li><a href="camp.html" class="nb">Summer Camps</a></li>
+        <li><a href="about.html" class="nb">About Us</a></li>
+        <li><a href="gallery.html" class="nb">Gallery</a></li>
+        <li><a href="contact.html" class="nb">Contact Us</a></li>
+      </ul>
+      <button class="nb menu" type="button">☰</button>
+    </nav>
+
+    <main id="private-page">
+      <!-- CINEMATIC HERO -->
+      <section class="private-hero">
+        <div class="hero-content reveal">
+          <span class="hero-tag">Exclusive Experiences</span>
+          <h1>Your Mountain. Your Way.</h1>
+          <p>
+            Skip the crowds and fixed schedules. Craft a personal Himalayan
+            story with dedicated logistics and elite hospitality tailored only
+            for you.
+          </p>
+          <div class="hero-actions">
+            <a href="#inquiry" class="gold-btn">Plan Your Private Trip</a>
+            <a href="#tiers" class="outline-btn">Compare Tiers</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRIBE SELECTION -->
+      <section class="private-container tribe-section reveal">
+        <div class="section-header">
+          <h2 class="section-title">Adventure Tailored For Your Tribe</h2>
+          <p class="section-sub">
+            Choose who you're traveling with, and we'll handle the rest.
+          </p>
+        </div>
+        <div class="tribe-grid">
+          <div class="tribe-card" onclick="selectTribe('Couple')">
+            <div class="tribe-img">
+              <img
+                src="https://github.com/Aegis76/Mountain-Vibes/blob/main/The-Mountain-Vibes-main/images/20251028_080632.jpg?raw=true"
+                alt="Couple"
+              />
+            </div>
+            <div class="tribe-overlay"></div>
+            <div class="tribe-info">
+              <h3>Couples</h3>
+              <p>Romantic getaways & private camps.</p>
+            </div>
+          </div>
+          <div class="tribe-card" onclick="selectTribe('Family')">
+            <div class="tribe-img">
+              <img
+                src="https://github.com/Aegis76/Mountain-Vibes/blob/main/The-Mountain-Vibes-main/images/20250602_142500.jpg?raw=true"
+                alt="Family"
+              />
+            </div>
+            <div class="tribe-overlay"></div>
+            <div class="tribe-info">
+              <h3>Families</h3>
+              <p>Kid-friendly routes & safety first.</p>
+            </div>
+          </div>
+          <div class="tribe-card" onclick="selectTribe('Friends')">
+            <div class="tribe-img">
+              <img
+                src="https://github.com/Aegis76/Mountain-Vibes/blob/main/The-Mountain-Vibes-main/images/IMG_7426.jpg?raw=true"
+                alt="Friends"
+              />
+            </div>
+            <div class="tribe-overlay"></div>
+            <div class="tribe-info">
+              <h3>Groups of Friends</h3>
+              <p>Custom difficulty & party vibes.</p>
+            </div>
+          </div>
+          <div class="tribe-card" onclick="selectTribe('Solo')">
+            <div class="tribe-img">
+              <img
+                src="https://github.com/Aegis76/Mountain-Vibes/blob/main/The-Mountain-Vibes-main/images/20251027_090249.jpg?raw=true"
+                alt="Solo"
+              />
+            </div>
+            <div class="tribe-overlay"></div>
+            <div class="tribe-info">
+              <h3>Solo Explorers</h3>
+              <p>1-on-1 guiding & ultimate flexibility.</p>
+            </div>
+          </div>
+          <div class="tribe-card" onclick="selectTribe('Corporate')">
+            <div class="tribe-img">
+              <img
+                src="https://github.com/Aegis76/Mountain-Vibes/blob/main/The-Mountain-Vibes-main/images/GPTempDownload%20(1).jpg?raw=true"
+                alt="Corporate"
+              />
+            </div>
+            <div class="tribe-overlay"></div>
+            <div class="tribe-info">
+              <h3>Corporate Teams</h3>
+              <p>Team building & luxury offsites.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIER COMPARISON -->
+      <section class="tier-section" id="tiers">
+        <div class="private-container reveal">
+          <div class="section-header">
+            <h2 class="section-title">Choose Your Comfort</h2>
+            <p class="section-sub">
+              Two tiers of excellence. Endless memories.
+            </p>
+          </div>
+
+          <div class="tier-grid">
+            <!-- DELUXE TIER -->
+            <div class="tier-card deluxe">
+              <div class="tier-badge">Popular</div>
+              <h3>Deluxe Trip</h3>
+              <p class="tier-desc">
+                Balanced comfort and authentic mountain experience.
+              </p>
+              <ul class="tier-features">
+                <li>
+                  <span>🏠</span> <strong>Accommodation:</strong> Quality guest
+                  houses & standard tents
+                </li>
+                <li>
+                  <span>🍲</span> <strong>Food:</strong> Nutritious local &
+                  Indian cuisine
+                </li>
+                <li>
+                  <span>🛡️</span> <strong>Safety:</strong> Certified guides & O2
+                  cylinders
+                </li>
+                <li>
+                  <span>🚛</span> <strong>Transport:</strong> Shared or Standard
+                  SUV (Bolero/Maxx)
+                </li>
+                <li>
+                  <span>🚶</span> <strong>Staff:</strong> 1 Guide for every 6
+                  trekkers
+                </li>
+              </ul>
+              <a href="#inquiry" class="tier-btn" onclick="selectTier('Deluxe')"
+                >Select Deluxe</a
+              >
+            </div>
+
+            <!-- PREMIUM TIER -->
+            <div class="tier-card premium">
+              <div class="tier-badge gold">Premium</div>
+              <h3>Elite Premium</h3>
+              <p class="tier-desc">
+                The pinnacle of Himalayan luxury and personalized care.
+              </p>
+              <ul class="tier-features">
+                <li>
+                  <span>🏨</span> <strong>Accommodation:</strong> Best-in-class
+                  hotels & spacious walk-in tents
+                </li>
+                <li>
+                  <span>👨‍🍳</span> <strong>Food:</strong> Gourmet multi-cuisine
+                  with specialized chef
+                </li>
+                <li>
+                  <span>🚑</span> <strong>Safety:</strong> Advanced medical kits
+                  & pulse oximeters
+                </li>
+                <li>
+                  <span>🚐</span> <strong>Transport:</strong> Luxury Private SUV
+                  (Innova Crysta)
+                </li>
+                <li>
+                  <span>🏅</span> <strong>Staff:</strong> 1 Pro Guide for every
+                  3 trekkers
+                </li>
+                <li>
+                  <span>🎒</span> <strong>Porterage:</strong> 1 Porter for every
+                  1 trekker (Offloading)
+                </li>
+              </ul>
+              <a
+                href="#inquiry"
+                class="tier-btn gold"
+                onclick="selectTier('Premium')"
+                >Select Premium</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOM BUILDER FORM -->
+      <section class="private-form-section" id="inquiry">
+        <div class="private-container reveal">
+          <div class="form-wrapper">
+            <div class="form-intro">
+              <h2
+                class="section-title"
+                style="text-align: left; margin: 0 0 10px"
+              >
+                Craft Your Adventure
+              </h2>
+              <p>
+                Tell us what you're dreaming of, and our private trip
+                specialists will build it for you.
+              </p>
+
+              <div class="form-stats">
+                <div class="fs-item">
+                  <strong>500+</strong>
+                  <span>Custom Trips Planned</span>
+                </div>
+                <div class="fs-item">
+                  <strong>24/7</strong>
+                  <span>Dedicated Support</span>
+                </div>
+              </div>
+            </div>
+
+            <form class="p-form" id="privateInquiry">
+              <div class="form-group">
+                <label>Tell us about yourself</label>
+                <div class="form-row">
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Trip Basics</label>
+                <div class="form-row">
+                  <div class="select-wrap">
+                    <select name="trekName" id="trekName" required>
+                      <option value="" disabled selected>
+                        Select a Trek / Region
+                      </option>
+                      <!-- Populated via JS -->
+                    </select>
+                  </div>
+                  <input
+                    type="number"
+                    name="pax"
+                    placeholder="No. of Participants"
+                    min="1"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>When are you planning?</label>
+                <input
+                  type="text"
+                  name="dates"
+                  placeholder="Preferred Month or Specific Dates"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Preferred Comfort Tier</label>
+                <div class="tier-radio-group">
+                  <label class="t-radio">
+                    <input type="radio" name="tier" value="Deluxe" checked />
+                    <span class="t-radio-box">Deluxe</span>
+                  </label>
+                  <label class="t-radio">
+                    <input type="radio" name="tier" value="Premium" />
+                    <span class="t-radio-box">Premium Elite</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Special Requests</label>
+                <textarea
+                  name="details"
+                  placeholder="Tell us about specific needs (e.g. kid's safety, special diet, birthday surprise...)"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="gold-btn" style="width: 100%">
+                Get My Personalized Quote
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-section">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h6>Navigation</h6>
+            <a href="index.html">Home</a>
+            <a href="trek.html">All Treks</a>
+            <a href="camp.html">Summer Camps</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <div class="footer-col">
+            <h6>Legal</h6>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="disclaimer.html">Disclaimer</a>
+          </div>
+          <div class="footer-col">
+            <h6>Contact Info</h6>
+ <div class="cc-row">📍Near, GMVN Roopkund Marg, Lohajung, Mundoli, Uttarakhand 246427g</div>
+              <div class="cc-row">📞 +91 9557711495</div>
+            <div class="cc-row">✉ tmvadventures@gmail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 The Mountain Vibes. All rights reserved.
+      </div>
+    </footer>
+
+    <div id="toast" class="toast"><span id="toastMsg"></span></div>
+
+    <script src="treks-data.js"></script>
+    <script src="config.js"></script>
+    <script src="img-utils.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Populate Trek Dropdown
+      const trekSelect = document.getElementById("trekName");
+      if (trekSelect && typeof TREKS !== "undefined") {
+        const sortedTreks = Object.entries(TREKS).sort((a, b) =>
+          a[1].title.localeCompare(b[1].title),
+        );
+        sortedTreks.forEach(([key, trek]) => {
+          const opt = document.createElement("option");
+          opt.value = trek.title;
+          opt.textContent = trek.title;
+          trekSelect.appendChild(opt);
+        });
+        // Add "Other / Custom" option
+        const otherOpt = document.createElement("option");
+        otherOpt.value = "Custom Region / Other";
+        otherOpt.textContent = "Other / Custom Region";
+        trekSelect.appendChild(otherOpt);
+      }
+
+      function selectTribe(tribe) {
+        const details = document.querySelector('textarea[name="details"]');
+        details.value = `I am planning this trip for a ${tribe}. `;
+        document
+          .getElementById("inquiry")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      function selectTier(tier) {
+        const radio = document.querySelector(
+          `input[name="tier"][value="${tier}"]`,
+        );
+        if (radio) radio.checked = true;
+      }
+
+      document
+        .getElementById("privateInquiry")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+
+          // Enhanced message for WhatsApp
+          const name = formData.get("fullName");
+          const email = formData.get("email");
+          const trek = formData.get("trekName");
+          const pax = formData.get("pax");
+          const tier = formData.get("tier");
+          const dates = formData.get("dates");
+          const details = formData.get("details") || "None";
+
+          const message =
+            `*NEW PRIVATE INQUIRY* 🏔️\n\n` +
+            `*Name:* ${name}\n` +
+            `*Email:* ${email}\n` +
+            `*Trek:* ${trek}\n` +
+            `*Participants:* ${pax}\n` +
+            `*Tier:* ${tier}\n` +
+            `*Dates:* ${dates}\n` +
+            `*Details:* ${details}\n\n` +
+            `_Sent from Private Trip Builder_`;
+
+          const WHATSAPP_NUMBER = "919557711495";
+          const waUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}`;
+          window.open(waUrl, "_blank");
+
+          if (typeof showToast === "function") {
+            showToast("✅ Redirecting to WhatsApp specialist...");
+          }
+        });
+    </script>
+  </body>
+</html>
